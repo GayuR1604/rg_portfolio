@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+
+
+/*-----home-----*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0F103F;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/HomeBG.png);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 1%;
+}
+.logo{
+    height: 40px;
+    width: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #C961DE;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.home{
+    font-size: 30px;
+}
+.home h1{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Gayathri", sans-serif;
+    margin-top: 20px;
+}
+.home h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Gayathri", sans-serif;
+    margin-top: 20px;
+}
+.home-sec{
+    display: flex;
+}
+.home-part{
+    width: 70%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.gayu{
+    width: 30%;
+}
+.btn img{
+   position: relative;
+   margin-left: 10px;
+   top: 3px;
+}
+.gayu img{
+    position: absolute;
+    height: 600px; 
+    width: 450px;
+    right: 0;
+    top: 6%;
+}
+.btn{
+    display: block;
+    margin: 70px 0;
+    width: fit-content;
+    border: 1px solid #6A6969;
+    padding: 14px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: linear-gradient(#C961DE,#2F2F8A);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+.home img{
+    width: 25px;
+    height: 25px;
+}
+
+/*-----about-----*/
+#about-header{
+    width: 100%;
+    background-image: url(images/AboutBG.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.main-sec {
+    display: flex;
+}
+.about h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.about p{
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+}
+
+.ui h3{
+   margin-top: 50px;
+   font-family: "Gayathri", sans-serif;
+   font-size: 22px;
+   font-weight: 800;
+   color: #C961DE;
+}
+.ui p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+}
+.personal{
+    list-style: none;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+}
+.hob h3{
+    margin-top: 20px;
+    font-family: "Gayathri", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #C961DE;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+}
+.icons h6{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+}
+.icons div img{
+    width: 40px;
+    height: 40px;
+}
+.icons div{
+    border: 1px solid #000;
+    background: linear-gradient(#2F2F8A,#C961DE);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: 105px;
+    width: 123px;
+    color: #000;
+}
+.info {
+    width: 60%;
+}
+.abt1,.abt2{
+   width: 20%;
+}
+.abt1 img{
+    width: 110%;
+    height: 555px;
+    position: relative;
+    top: 195px;
+    right: 25px;
+}
+.abt2 img{
+    width: 125%;
+    height: 400px;
+    position: relative;
+    top: 40px;
+    right: 25%;
+}
+
+
+/*-----skills-----*/
+#skills-header{
+    width: 100%;
+    background-image: url(images/SkillsBG.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.skill-sec{
+    display: flex;
+}
+.skill-cont{
+    width: 75%;
+}
+.skil1,.skil2{
+    width: 25%;
+}
+.skil3{
+    width: 25%;
+}
+.skil1 img{
+    width: 450px;
+    height: 350px;
+    position: relative;
+    top: 50px;
+    right: 5%;
+}
+.skil2 img{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 45px;
+    left: 5%;
+}
+.skil3 img{
+    width: 265px;
+    height: 425px;
+    position: relative;
+    top: 125px;
+    right: 115%;
+}
+.skill-part{
+    display: flex;
+    width: 100%;
+}
+.skill-left{
+    flex-basis: 40%;
+    position: relative;
+}
+.skill-right{
+    flex-basis: 50%;
+    position: relative;
+}
+.skills h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.skills p{
+    margin-top: 45px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+}
+.ui-sk h3, .ux-sk h3{
+    text-align: center;
+    margin-top: 35px;
+    color: #C961DE;
+    font-family: "Gayathri", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.per img{
+    height: 40px;
+    width: 40px;
+}
+.per div{
+    padding: 10px;
+    text-align: center;
+}
+.per{
+    display: grid;
+    grid-template-columns: rep(fit-content, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.per h5{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.edu h3{    
+    text-align: center;
+    color: #C961DE;
+    margin-top: 35px;
+    font-family: "Gayathri", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: auto;
+   margin-top: 35px;
+   font-family: 'Poppins',sans-serif;
+}
+table,th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th,td {
+    padding: 10px ;
+}
+
+
+/*-----project-----*/
+#project-header{
+    width: 100%;
+    background-image: url(images/ProjectBG.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.pro-sec{
+    display: flex;
+}
+.pro-cont{
+    width: 60%;
+}
+.bg1,.bg2{
+    width: 20%;
+}
+.bg1 img{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 50px;
+}
+.bg2 img{
+    width: 250px;
+    height: 500px;
+    position: relative;
+    top: 335px;
+    right: 5%;
+}
+.project h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.subsec1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+}
+.subsec2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.subsec2 .work img{
+    width: 100%;
+    height: 315px;
+    display: block;
+    border-radius: 10px;
+}
+.subsec2 .pro{
+    width: 100%;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+   width: 100%;
+   height: 315px;
+   display: block;
+   border-radius: 10px;
+}
+
+.pro{
+    width: 100%;
+    height: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),#C961DE);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: start;
+    transition: height 0.5s;
+}
+.pro h3{
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    color: #e2d951;
+    text-align: center;
+}
+.work:hover .pro{
+    height: 100%;
+}
+.work .vbtn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #000;
+    text-decoration: none;
+    background: transparent;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.work .vbtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pro .fa{
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+
+
+
+/*-----contact-----*/
+#contact-header{
+    width: 100%;
+    background-image: url(images/ContactBG.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.sub-title h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.detail h3{
+    color: #C961DE;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Gayathri", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.detail p{
+    font-weight: 500;
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.cont-info{
+    margin-top: 20px;
+}
+.cont-info div{
+    display: flex;
+    margin-bottom: 25px;
+}
+.cont-info img{
+    height: 50px;
+    width: 50px;
+}
+.cont-info p{
+    font-weight: 300;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.cont-info div p{
+    margin-top: 10px;
+}
+.detail1 h3{
+    color: #C961DE;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Gayathri", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.cont-sec{
+    display: flex;
+}
+.cont-items{
+    width: 100%;
+    display: flex;
+}
+.contact-cont{
+    width: 60%;
+}
+.cont1,.cont2{
+    width: 20%;
+}
+.cont1 img{
+    height: 425px;
+    width: 285px;
+    position: relative;
+    top: 30px;
+    right: 5px;
+}
+.cont2 img{
+    height: 420px;
+    width: 250px;
+    position: relative;
+    top: 175px;
+    left: 50px;
+}
+.cont-left{
+    flex-basis: 45%;
+    position: relative;
+    right: 70px;
+}
+.cont-right{
+    flex-basis: 50%;
+    position: relative;
+    left: 70px;
+}
+.cont-right form{
+    width: 100%;
+}
+.user-info{
+    margin-top: 25px;
+}
+form input ,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 12px;
+    margin: 25px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 10px;
+    color: #000;
+}
+.btn.btn2{
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top: -45px;
+}
+
+
+
+/*----------small screens----------*/
+nav .fa{
+    display: none;
+}
+.work .vbtn{
+    display: none;
+}
+.pro .fa{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container{
+        padding: 5%;
+    }
+
+    /*-----home-----*/
+    .gayu img{
+        height: 400px;
+        width: 300px;
+        right: 20%;
+        top: 10px;
+    }
+    .home-part{
+       justify-content: center;
+       margin-top: 45%;
+    }
+    .home h3{
+        font-size: 20px;
+    }
+    .home h1{
+        font-size: 35px;
+    }
+    .btn{
+        margin: 50px 0;
+        padding: 15px 25px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+       
+    }
+    nav ul{
+        background: #C961DE;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        font-size: 18px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        font-size: 24px;
+        
+    }
+    /*-----about-----*/
+    .about1 img,.about2 img{
+        display: none;
+    }
+    .info{
+        width: 100%;
+        padding: 10px;
+    }
+    .main-sec{
+        display: block;
+    }
+    .icons{
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons div {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        height: 70px;
+        width: 70px;
+    }
+    .icons h6 {
+        font-size: 8px;
+    }
+    .icons div img {
+        width: 28px;
+        height: 28px;
+    }
+ 
+   
+
+
+    /*-----skills-----*/
+    .skillimg1 ,.skillimg2 ,.skillimg3{
+        display: none;
+    }
+    .skill-sec ,.skill-part{
+        display: block;
+    }
+    .skill-cont{
+        width: 100%;
+    }
+    .per{
+        grid-gap: 15px;
+    }
+    .per img {
+        height: 28px;
+        width: 28px;
+    }
+    .per h5{
+        font-size: 8px;    
+    }
+    .per div {
+        padding: 5px;
+    }
+    .edu-sec{
+        overflow-x: scroll;
+    }
+    th, td {
+        padding: 5px;
+    }
+    table{
+        font-size: 10px;
+    }
+
+
+    /*-----project-----*/
+    .proimg1 ,.proimg2{
+        display: none;
+    }
+    .pro-sec{
+        display: block;
+    }
+    .pro-cont{
+        width: 100%;
+    }
+    .subsec2{
+        display: block;
+    }
+    .work img{
+        width: 100%;
+    }
+    .view{
+        display: block;
+        margin-top: 20%;
+    }
+    .work .vbtn{
+        display: block;
+    }
+    .pro .fa{
+        display: block;
+    }
+
+
+    /*-----contact-----*/
+    .contimg1 ,.contimg2{
+        display: none;
+    }
+    .cont-sec, .cont-items{
+        display: block;
+    }
+    .cont-left ,.cont-right{
+        position: revert;
+    }
+    .contact-cont{
+        width: 100%;
+    }
+    .cont-rightsub{
+        width: 85%;
+        margin-left: 8%;
+    }
+    .cont-info div{
+        margin-left: 15%;
+    }
+    
+}
