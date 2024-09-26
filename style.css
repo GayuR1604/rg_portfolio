@@ -65,7 +65,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.home{
+.home{  
     font-size: 30px;
 }
 .home h1{
@@ -79,6 +79,12 @@ nav ul li a:hover::after{
     font-weight: 400;
     font-family: "Gayathri", sans-serif;
     margin-top: 20px;
+}
+.home p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Gayathri", sans-serif;
+    margin-top: 10px;
 }
 .home-sec{
     display: flex;
@@ -642,17 +648,21 @@ nav .fa{
     }
     .home-part{
        justify-content: center;
-       margin-top: 45%;
+       margin-top: 50%;
+    }
+    .home{
+        margin-top: 20%;
     }
     .home h3{
         font-size: 20px;
+        margin-top: 15px;
     }
     .home h1{
-        font-size: 35px;
+        font-size: 30px;
+        margin-top: 15px;
     }
-    .btn{
-        margin: 50px 0;
-        padding: 15px 25px;
+    .home p{
+        font-size: 15px;
     }
     nav .fa{
         display: block;
